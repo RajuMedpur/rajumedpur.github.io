@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCP Learning</title>
+  <title>My AI Learnings</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +15,6 @@
       padding: 0;
       background-color: #f9fafc;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
@@ -30,6 +29,11 @@
       font-size: 2.5rem;
     }
 
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
     main {
       max-width: 900px;
       margin: 2rem auto;
@@ -38,39 +42,68 @@
 
     h2 {
       color: #444;
-      border-left: 5px solid #667eea;
-      padding-left: 0.5rem;
-      margin-top: 2rem;
+      border-bottom: 2px solid #667eea;
+      padding-bottom: 0.5rem;
     }
 
-    ul, ol {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 1rem 0;
+      padding: 1rem;
       background: white;
-      padding: 1rem 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      margin-top: 1rem;
+      transition: transform 0.2s;
     }
 
-    li {
-      margin: 0.5rem 0;
+    ul li:hover {
+      transform: translateY(-3px);
     }
 
-    p {
-      font-size: 1.1rem;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 2rem;
+    ul li a {
       text-decoration: none;
       color: #667eea;
       font-weight: bold;
-      border: 2px solid #667eea;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: background 0.2s, color 0.2s;
+      font-size: 1.1rem;
     }
 
-    a:hover {
-      background: #667eea;
-      color: wh
+    .hero-image {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f0f0f0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 My AI Blog</h1>
+    <p>Sharing AI learnings, notes, and real-world examples</p>
+    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="AI Illustration" class="hero-image">
+  </header>
+
+  <main>
+    <h2>📚 Articles</h2>
+    <ul>
+      <li><a href="mcp.html">MCP Learning – AI + Cloud-Native</a></li>
+      <!-- Add more articles here -->
+    </ul>
+  </main>
+
+  <footer>
+    © 2025 My AI Learnings Blog | Built with ❤️ on GitHub Pages
+  </footer>
+</body>
+</html>
